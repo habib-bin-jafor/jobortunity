@@ -1,0 +1,624 @@
+
+/* ============================= large  device responsive css start ========================== */
+.navbar .navbar-nav{
+    background: var(--bg1);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-item {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.navbar .navbar-nav .nav-item:hover a {
+    color: #fff;
+}
+
+.navbar .log-btn{
+    background: var(--bg3);
+}
+
+.navbar .log-btn .btn{
+    background: linear-gradient(to right, var(--gd1) , var(--gd2));
+}
+
+.navbar .navbar-nav .nav-link::before {
+   top: 0 !important;
+    left: 0px;
+
+}
+
+#banner .banner-image img {
+    position: static;
+    
+}
+
+#work .work-details::before{
+    left: 175px;
+}
+
+#remote .our-worker .our-work-details-2 .our-work-details-2-a {
+	margin-right: -96px;
+}
+
+
+
+/* ============================= large  device responsive css ends ========================== */
+
+
+/* ============================= medium  device responsive css start ========================== */
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar .navbar-nav{
+        background: var(--bg1);
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link.active {
+        color: #fff;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .navbar .navbar-nav .nav-item:hover a {
+        color: #fff;
+    }
+
+    .navbar .log-btn{
+        background: var(--bg3);
+    }
+
+    .navbar .log-btn .btn{
+        background: linear-gradient(to right, var(--gd1) , var(--gd2));
+    }
+
+    .navbar .navbar-nav .nav-link::before {
+       top: 0 !important;
+        left: 0px;
+
+    }
+
+    #banner .banner-header h1{
+        padding-top: 60px;
+    }
+
+    #banner .banner-image img {
+        position: static;
+        
+    }
+
+    #banner .banner-header p{
+        padding-bottom: 60px;
+    }
+
+    #banner .nav.nav-tabs {
+        margin-top: 30px;
+    }
+
+    header p {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    #work .work-details {
+        display:block;
+    }
+
+    #work .work-details::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border: 0px dashed #dddddd;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    #recent .recent-content .view-jobs a {
+        font-size: 13px;
+        padding: 10px 13px;
+    }
+
+    #recent .recent-content .view-jobs {
+        margin-top: 62px;
+    }
+
+    #recent .recent-browse-job .browse-job {
+        margin-top: -30px;
+    }
+
+    #recent .work-hire .work-hire-signup {
+        display: block;
+    }
+
+    #recent .work-hire .work-hire-signup .work-signup {
+
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #remote .our-worker .our-worker-image .our-worker-overlay h2{
+        right: 275px;
+    }
+
+    #remote .our-worker .our-work-details-2 .our-work-details-2-b h5{
+        padding-left: 207px;
+    }
+
+    #remote .browse-jobs{
+        margin-top: -32px;
+    }
+
+    #feedback .slick-images {
+        padding-top: 0px;
+    }
+
+    #feedback .slick-text {
+        padding-top: 30px;
+    }
+
+    header h3{
+        margin-top: 50px;
+    }
+
+    #footer .footer-second{
+        text-align: left;
+    }
+
+    #footer::after{
+        top: 700px;
+
+     }
+     
+     #footer .footer-newsletter form{
+         position: relative;
+     }
+
+     #footer .footer-newsletter form button {
+        position: absolute;
+        top: 3px;
+        right: -133px;
+        border-radius: 3px;
+    }
+
+
+ }
+
+/* ============================= medium  device responsive css ends ========================== */
+
+
+
+/* ============================= small device responsive css start ========================== */
+
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+
+        .navbar .navbar-nav{
+            background: var(--bg1);
+        }
+
+        .navbar .navbar-nav .nav-item .nav-link.active {
+            color: #fff;
+        }
+
+        .navbar .navbar-nav .nav-item {
+            padding-left: 0;
+            padding-top: 0;
+        }
+
+        .navbar .navbar-nav .nav-item:hover a {
+            color: #fff;
+        }
+
+        .navbar .log-btn{
+            background: var(--bg3);
+        }
+
+        .navbar .log-btn .btn{
+            background: linear-gradient(to right, var(--gd1) , var(--gd2));
+        }
+
+        .navbar .navbar-nav .nav-link::before {
+           top: 0 !important;
+            left: 0px;
+
+        }
+
+        .navbar .navbar-nav .nav-item {
+            padding-top: -10px;
+        }
+
+        #banner .banner-header h1 {
+            padding-top: 40px;
+        }
+
+        #banner .banner-header p {
+            padding-bottom: 60px;
+        }
+
+        #banner .banner-image img {
+            position: static;
+            
+        }
+
+        header p{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #work .work-details {
+            display: block;
+        }
+
+        #work .work-details::before {
+            content: '';
+            width: 0px;
+            height: 0px;
+            border: 0px dashed #dddddd;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+        }
+
+        #work .work-details p {
+            padding-bottom: 30px;
+        }
+
+        #recent .location-dollar {
+            padding-top: 50px;
+            display: block;
+            padding-left: 20px;
+        }
+
+        #recent .recent-content .view-jobs{
+            position: relative;
+        }
+
+        #recent .recent-content .view-jobs a {
+            position: absolute;
+            top: -108px;
+            left: 50%;
+        }
+
+        #recent .recent-browse-job .browse-job{
+            position: relative;
+        }
+
+        #recent .recent-browse-job .browse-job a {
+            position: absolute;
+            top: 0px;
+            left: 35%;
+        }
+
+        #recent .work-hire .work-hire-signup .work-signup {
+            margin-top: 30px;
+        }
+
+        #recent .work-hire .work-hire-signup {
+            display: block;
+        }
+
+        #recent .work-hire .work-hire-signup .work-signup {
+            margin-right: 0px;
+        }
+
+        #recent .work-hire .work-hire-signup .hire-signup {
+            margin-top: 30px;
+        }
+
+        #remote .browse-jobs{
+            position: relative;
+            margin-bottom: 100px;
+        }
+
+        #remote .browse-jobs a {
+            position: absolute;
+            top: 0;
+            left: 32%;
+        }
+
+        #feedback .feedback-text .overlay {
+            left: 231px;
+        }
+
+        #feedback .feedback-header {
+            padding-top: 30px;
+        }
+
+        #feedback .slick-images {
+            padding-top: 30px;
+        }
+
+        #feedback .slick-dots {
+            padding-left: 227px;
+            margin-top: -30px;
+        }
+
+        #feedback .slick-text {
+            padding-top: 30px;
+        }
+
+        #milestone .funfact h4.line-2::before {
+            content: '';
+            width: 0px;
+            height: 0px;
+            background: #dddddd;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #milestone .funfact h4.line-2::after {
+            content: '';
+            width: 0px;
+            height: 0px;
+            background: #dddddd;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        #footer .footer-second h4 {
+            padding-top: 30px;
+        }
+
+        #footer .footer-newsletter h4 {
+            padding-top: 30px;
+        }
+
+        #footer .footer-newsletter form{
+            position: relative;
+        }
+
+        #footer .footer-newsletter form button {
+            position: absolute;
+            right: 0px;
+            top: 3px;
+            border-radius: 3px;
+         }
+
+         #footer::after{
+            top: 1060px;
+
+         }
+     }
+
+
+
+
+     /* small device ends */
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    .navbar .navbar-nav{
+        background: var(--bg1);
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link.active {
+        color: #fff;
+    }
+
+    .navbar .navbar-nav .nav-item {
+        padding-top: 0px;
+
+    }
+
+    .navbar .navbar-nav .nav-link::before {
+        content: '';
+        width: 0%;
+        height: 0;
+        background: var(--bg1);
+        position: absolute;
+        top: -35px !important;
+        left: 0px;
+        transition: all linear 0.4s;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link.active::before {
+        width: 0%;
+    }
+
+    .navbar .log-btn .btn {
+        background: var(--bg1);
+        box-shadow: 0px 0px 50px 1px rgba(8, 186, 239, 0.35);
+
+    }
+
+    .navbar .log-btn{
+        background : var(--bg3);
+
+        }
+
+    .navbar .navbar-nav .nav-item{
+        transition: all linear 0.4s;
+    }
+
+    .navbar .navbar-nav .nav-item:hover a{
+        color: #fff;
+    }
+
+
+    #banner .banner-header h1 {
+        font-size: 44px;
+        padding-top: 50px;
+    }
+
+    #banner .banner-image img {
+        position: static;
+        top: -30px;
+        right: 0px;
+        transform: scale(0.8);
+    }
+
+    header p {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    header h3::before {
+        top: 50px;
+        left: 230px;
+    }
+
+    #popular .popular-categories .popular-item {
+        margin-bottom: 50px;
+    }
+
+    #work .work-details {
+        display: block;
+    }
+
+    #work .work-details::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border: 0px dashed #dddddd;
+        
+    }
+
+    .recent-check-box{
+        padding-top: 0px;
+    }
+
+    #recent .location-dollar {
+        padding-left: 22px;
+    }
+
+    #recent .recent-content .view-jobs {
+        margin-top: 100px;
+        position: relative;
+    }
+
+    #recent .recent-content .view-jobs a {
+        position: absolute;
+        top: -85px;
+        left: 207px;
+    }
+
+    #recent .recent-browse-job .browse-job {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    #recent .work-hire .work-hire-signup {
+        display: block;
+    }
+
+    #recent .work-hire .work-hire-signup .work-signup {
+        margin-bottom: 30px;
+        margin-right: 0px !important;
+    }
+
+    #remote .remote-header {
+        padding-top: 20px;
+    }
+
+    #remote .our-worker .our-worker-image .our-worker-overlay h2 {
+        right: 208px;
+    }
+
+    #remote .our-worker .our-work-details-2 {
+        padding-left: 63px;
+    }
+
+    #remote .our-worker {
+        margin-bottom: 40px;
+    }
+
+    #remote .browse-jobs {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #feedback .feedback-header {
+        padding-top: 30px;
+    }
+
+    #feedback .feedback-text .overlay {
+        left: 250px;
+    }
+
+    #feedback .feedback-text {
+        padding-bottom: 0px;
+    }
+
+    #feedback .slick-images {
+        padding-top: 10px;
+    }
+
+    #feedback .slick-dots {
+        padding-left: 200px;
+    }
+
+    #feedback .slick-text {
+        padding-top: 27px;
+    }
+
+    #milestone .funfact h4 {
+        padding-top: 30px;
+    }
+
+    #milestone .funfact h4.line-2::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        background: #dddddd;
+    }
+
+    #milestone .funfact h4.line-2::after {
+        content: '';
+        width: 0px;
+        height: 0px;
+        background: #dddddd;
+    }
+
+    #footer .footer-second h4 {
+        padding-top: 30px;
+    }
+
+    #footer .footer-newsletter h4 {
+        padding-top: 60px;
+    }
+
+    #footer .footer-newsletter form {
+        display: flex;
+    }
+
+    #footer .footer-copyright {
+        padding-top: 30px;
+    }
+
+    /* small device start */
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }

@@ -1,0 +1,1429 @@
+/* 
+
+1. commnon css
+2. heading common css
+3. navbar css here
+4. banner css
+5.popular css
+6. work css 
+7. recent css
+8.remote css
+9.milestone css
+10.footer css
+
+*/
+
+
+
+:root{
+    --hf: 'Arimo', sans-serif;
+    --pf: 'Abril Fatface', cursive;
+    --hc1: #222222;
+    --bg1: #00b8ef;
+    --bg2: #f5f5f5;
+    --bg3: #fef8ff;
+    --pc1: #444444;
+    --pc2: #777777;
+    --gd1: #58d2f5;
+    --gd2: #00b8ef;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.clr{
+    clear: both;
+}
+
+/********************
+ common css are there 
+ ********************/
+header h3{
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--hc1);
+    text-transform: capitalize;
+    position: relative;
+}
+
+header h3::before {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 5px;
+	background: var(--bg1);
+	top: 154%;
+	left: 48%;
+}
+
+header p{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--pc1);
+    line-height: 24px;
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-top: 34px;
+
+}
+
+/* common heading css here */
+
+/* back to top button start */
+
+.back-to-top{
+    background-color: var(--bg1);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+.back-to-top i{
+    text-align: center;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+/* back to top button ends */
+
+
+/**********************
+ nav bar css start here
+ **********************/
+.nav-fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    animation: smooth 1s linear;
+}
+
+
+@keyframes smooth{
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+
+ .navbar{
+     border-top: 3px solid rgba(88, 211, 245, 0.5);
+     background: var(--bg3) !important;
+     
+ }
+
+.navbar .navbar-nav .nav-item{
+    padding-left: 58px;
+    padding-top: 60px;
+}
+
+.navbar .navbar-nav:last-child{
+    padding-left: 0px;
+}
+
+
+.navbar .navbar-nav .nav-item a{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--pc1);
+    transition: all linear 0.4s;
+    
+}
+
+.navbar .navbar-nav .nav-link{
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link::before {
+	content: '';
+	width: 0%;
+	height: 3px;
+	background: var(--bg1);
+	position: absolute;
+	top: -83px;
+	left: 0px;
+    transition: all linear 0.4s;
+
+}
+
+
+.navbar .navbar-nav .nav-item:hover .nav-link::before{
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active::before{
+    width: 100%;
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color: var(--bg1);
+    
+}
+
+.navbar .navbar-nav .nav-item:hover a{
+    color: var(--bg1);
+}
+
+.navbar .log-btn{
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.navbar .log-btn .btn{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 18px 21px;
+    box-shadow: 0px 0px 50px 1px rgba(8, 186, 239, 0.35);
+    transition: all linear 0.4s;
+    
+}
+
+.navbar .log-btn .btn:hover{
+    background: linear-gradient(to right, var(--gd2), var(--gd1));
+}
+
+/**********************
+ nav bar css ends here
+ **********************/
+
+
+ /**********************
+ banner part css start here
+ **********************/
+
+ #banner{
+     background: #fef8ff;
+     padding-bottom: -25px !important;
+     
+ }
+
+
+#banner .banner-header h1{
+     font-family: var(--pf);
+     font-weight: 400;
+     font-size: 58px;
+     color: var(--hc1);
+     text-transform: capitalize;
+     padding-top: 130px;
+     
+    
+ }
+
+ #banner{
+     overflow: hidden;
+ }
+
+#banner .banner-header p{
+    font-family: var(--hf);
+     font-weight: 400;
+     font-size: 18px;
+     color: var(--hc1);
+     padding-top: 30px;
+     padding-bottom: 120px;
+}
+
+ #banner .banner-image{
+     position: relative;
+ }
+
+
+ #banner .banner-image img{
+    position: absolute;
+    top: 0;
+    right: -140px;
+    
+ }
+
+
+ #banner form{
+     background-color: #fff;
+     
+ }
+
+
+ #banner form .first-input input{
+    width: 100%;
+}
+
+#banner form{
+    padding: 30px 20px;
+}
+
+#banner form .first-input input{
+    font-family: var(--hf);
+     font-style: italic;
+     font-size: 14px;
+     text-transform: capitalize;
+     color: #bbbbbb;
+     background: #fff;
+    padding-left: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+#banner form .second-input select{
+   width: 100%;
+}
+
+#banner form .second-input select{
+    font-family: var(--hf);
+     font-style: italic;
+     font-size: 14px;
+     text-transform: capitalize;
+     color: #bbbbbb;
+     background: #fff;
+    padding-left: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+#banner form .third-input select{
+   width: 100%;
+}
+
+#banner form .third-input select{
+    font-family: var(--hf);
+     font-style: italic;
+     font-size: 14px;
+     text-transform: capitalize;
+     color: #bbbbbb;
+     background: #fff;
+    padding-left: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+
+#banner form .forth-input button{
+   width: 100%;
+}
+
+#banner form .forth-input button{
+    padding: 10px 13px;
+    font-family: var(--hf);
+     font-weight: 400;
+     font-size: 20px;
+     color:#fff;
+     background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+#banner .nav.nav-tabs{
+    border-bottom: none;
+}
+
+#banner .nav .nav-item button {
+    font-family: var(--hf);
+     font-weight: 400;
+     font-size: 24px;
+     color: var(--hc1);
+    text-transform: capitalize;
+    border: none;
+}
+
+#banner .nav .nav-item .nav-link.active{
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+    color: #fff;
+}
+
+/**********************
+ banner part css ends here
+ **********************/
+
+
+/**********************
+ popular part css start here
+ **********************/
+ #popular .popular-header {
+	padding-top: 70px;
+}
+
+
+#popular .popular-item{
+    background: var(--bg2);
+}
+
+#popular .popular-categories{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+ 
+
+#popular .popular-categories .popular-item{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+#popular .popular-categories .popular-item:nth-child(4n){
+    margin-right: 0px;
+}
+
+
+#popular .popular-categories .popular-item img{
+    padding-top: 73px;
+}
+
+
+#popular .popular-categories .popular-item h4{
+    font-family: var(--pf);
+     font-weight: 400;
+     font-size: 24px;
+     color: var(--hc1);
+     text-transform: capitalize;
+     padding-top: 12px;
+}
+
+
+#popular .popular-categories .popular-item p{
+    font-family: var(--hf);
+     font-weight: 400;
+     font-size: 14px;
+     color: var(--pc1);
+     text-transform: capitalize;
+     padding-bottom: 50px;
+}
+
+#popular .popular-categories .popular-item a{
+     font-family: var(--hf);
+     font-weight: 400;
+     font-size: 16px;
+     text-transform: capitalize;
+    background: #fff;
+    color: var(--bg1);
+    padding: 17px 22px;
+    border-radius: 3px;
+    visibility: hidden;
+}
+
+#popular .popular-categories .popular-item:hover h4{
+    color: #fff;
+}
+
+#popular .popular-categories .popular-item:hover p{
+    color: #fff;
+}
+
+#popular .popular-categories .popular-item:hover{
+    transform: scale(1.2);
+    background: var(--bg1);
+}
+
+#popular .popular-categories .popular-item:hover a{
+    visibility: visible;
+
+}
+
+
+/**********************
+  popular part css ends here
+ **********************/
+
+
+
+
+/**********************
+  work part css start here
+ **********************/
+ #work{
+     background: var(--bg2);
+ }
+
+ #work header{
+    padding-top: 50px;
+
+ }
+
+#work .work-details{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+#work .work-details::before {
+	content: '';
+	width: 650px;
+	height: 0px;
+	border: 2px dashed #dddddd;
+	position: absolute;
+	top: 110px;
+	left: 322px;
+	z-index: -1;
+}
+
+
+#work .work-details img{
+    background: #fff;
+    padding: 20px 20px;
+    transition: all linear 0.4s;
+}
+
+#work .work-details img:hover{
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+    box-shadow: 0px 0px 50px 2px rgba(0, 183, 239, 0.4) ;
+}
+
+#work .work-details h4{
+    font-family: var(--pf);
+     font-weight: 400;
+     font-size: 20px;
+     text-transform: capitalize;
+     color: var(--hc1);
+     padding-top: 20px;
+}
+
+
+#work .work-details p{
+     font-family: var(--hf);
+     font-weight: 400;
+     font-size: 16px;
+     text-transform: capitalize;
+     color: var(--pc1);
+}
+
+/**********************
+  work part css ends here
+ **********************/
+
+
+/**********************
+  recent part css start here
+ **********************/
+
+ #recent .recent-header{
+     padding-top: 70px;
+     padding-bottom: 20px;
+     
+ }
+
+#recent .first-input input{
+    font-family: var(--hf);
+    font-style: italic;
+    font-size: 14px;
+    color: #bbbbbb;
+    text-transform: capitalize;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+#recent .second-input select{
+    font-family: var(--hf);
+    font-style: italic;
+    font-size: 14px;
+    color: #bbbbbb;
+    text-transform: capitalize;
+    background: #fff;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+
+#recent .third-input button{
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background: linear-gradient(to right, var(--gd1), var(--gd2));
+    text-transform: capitalize;
+    padding: 10px 35px;
+    width: 100%;
+}
+
+#recent .recent-checkbox form{
+    display: flex;
+    
+}
+
+#recent .recent-checkbox form .checkbox-radio{
+    padding-right: 45px;
+    padding-top: 26px;
+}
+
+#recent .recent-checkbox form .checkbox-radio span{
+    text-transform: capitalize;
+    font-size: 16px;
+    color: var(--pc1);
+}
+
+
+#recent .recent-list{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#recent .recent-list .recent-content{
+    margin-bottom: 30px;
+}
+
+#recent .recent-content:hover{
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+}
+
+#recent .recent-content:hover .recent-content-text h6{
+    color: #fff;
+}
+
+#recent .recent-content:hover .recent-content-text h5{
+    color: #fff;
+}
+
+#recent .recent-content:hover .recent-content-text p{
+    color: #fff;
+}
+
+#recent .recent-content:hover .location-dollar .los-angels i{
+    color: #fff;
+}
+
+#recent .recent-content:hover .location-dollar .los-angels p{
+    color: #fff;
+}
+
+#recent .recent-content:hover .location-dollar .dollar p{
+    color: #fff;
+}
+
+#recent .recent-content:hover .view-jobs a{
+    color: var(--bg1);
+    background: #fff;
+}
+
+#recent .recent-content .col-lg-5{
+    display: flex;
+}
+
+#recent .recent-content .recent-content-image img{
+    padding: 10px 20px 10px 10px;
+}
+
+#recent .recent-content .recent-content-text h6{
+    font-family: var(--hf);
+     font-weight: 400;
+     font-size: 14px;
+     text-transform: capitalize;
+     color: var(--bg1);
+     padding-top: 25px;
+}
+
+
+#recent .recent-content .recent-content-text h5{
+    font-family: var(--hf);
+     font-weight: 400;
+     font-size: 20px;
+     text-transform: capitalize;
+     color: var(--hc1);
+}
+
+#recent .recent-content .recent-content-text p{
+    font-family: var(--hf);
+     font-weight: 400;
+     font-size: 14px;
+     text-transform: capitalize;
+     color: var(--pc1);
+}
+
+#recent .location-dollar{
+    padding-top: 50px;
+    display: flex;
+}
+
+#recent .location-dollar .los-angels{
+    display: flex;
+}
+
+#recent .location-dollar .los-angels i{
+    padding-right: 10px;
+    font-size: 24px;
+}
+
+#recent .location-dollar .los-angels p{
+    text-transform: capitalize;
+    font-size: 16px;
+    color: var(--pc1);
+    padding-right: 100px;
+}
+
+#recent .location-dollar .dollar p{
+    font-family: var(--hf);
+     font-weight: 400;
+     font-size: 16px;
+     text-transform: capitalize;
+     color: var(--pc1);
+}
+
+#recent .recent-content .view-jobs{
+    margin-top: 37px;
+}
+
+#recent .recent-content .view-jobs a{
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+    padding: 17px 20px;
+    border-radius: 3px;
+}
+
+#recent .recent-content {
+    background: var(--bg2);
+}
+
+#recent .recent-browse-job{
+    margin-bottom: 75px;
+}
+
+#recent .recent-browse-job .browse-number p{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--pc1);
+}
+
+#recent .recent-browse-job .browse-job{
+    text-align: right;
+}
+
+#recent .recent-browse-job .browse-job a{
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+#recent .recent-browse-job .browse-job a{
+    padding: 20px 21px;
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+    color: #fff;
+    border-radius: 5px;
+}
+
+#recent .work-hire .work-hire-signup{
+    display: flex;
+    padding-bottom: 80px;
+    
+}
+
+#recent .work-hire .work-hire-signup .work-signup{
+    background: var(--bg2);
+    margin-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+#recent .work-hire .work-hire-signup .work-signup h5{
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--hc1);
+}
+
+#recent .work-hire .work-hire-signup .work-signup h6{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--bg1);
+}
+
+#recent .work-hire .work-hire-signup .work-signup p{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--hc1);
+}
+
+
+
+#recent .work-hire .work-hire-signup .work-signup a{
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--hc1);
+}
+
+
+#recent .work-hire .work-hire-signup .hire-signup{
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+}
+
+
+#recent .work-hire .work-hire-signup .hire-signup{
+    background: var(--bg1);
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+#recent .work-hire .work-hire-signup .hire-signup h5{
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#recent .work-hire .work-hire-signup .hire-signup h6{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#recent .work-hire .work-hire-signup .hire-signup p{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+
+#recent .work-hire .work-hire-signup .hire-signup a{
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+/**********************
+  recent part css ends here
+ **********************/
+
+
+/**********************
+  remote part css start here
+ **********************/
+ #remote{
+     background: var(--bg2);
+ }
+
+#remote .remote-header{
+    padding-top: 100px;
+}
+
+#remote .our-worker{
+    background: #fff;
+    margin-bottom: 80px;
+}
+
+#remote .our-worker .our-worker-image img{
+    padding-top: 30px;
+}
+
+#remote .our-worker .our-worker-image .our-worker-overlay{
+    position: relative;
+}
+
+#remote .our-worker .our-worker-image .our-worker-overlay h2 {
+    font-family: var(--pf);
+    font-size: 24px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+	color: #fff;
+	background: var(--bg1);
+	position: absolute;
+	top: -46px;
+	right: 141px;
+}
+
+#remote .our-worker .our-worker-details-1 h4{
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--hc1);
+    padding-top: 15px;
+}
+
+#remote .our-worker .our-worker-details-1 h5{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--hc1);
+
+}
+
+#remote .our-worker .our-worker-details-1 span{
+    font-family: var(--hf);
+    font-size: 16px;
+    
+}
+
+#remote .our-worker .our-worker-details-1{
+    padding-bottom: 20px;
+}
+
+#remote .our-worker .our-worker-details-1 span i{
+    color: #f68b1e;
+}
+
+
+#remote .our-worker .our-work-details-2{
+    display: flex;
+}
+
+#remote .our-worker .our-work-details-2 .our-work-details-2-a{
+    padding-left: 30px;
+}
+
+#remote .our-worker .our-work-details-2 .our-work-details-2-a h5{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--hc1);
+}
+
+#remote .our-worker .our-work-details-2 .our-work-details-2-b h5{
+    font-family: var(--hf);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--hc1);
+}
+
+#remote .our-worker .our-work-details-2 .our-work-details-2-b{
+    padding-left: 200px;
+}
+
+#remote .our-worker .our-work-details-2 .our-work-details-2-b{
+    display: flex;
+}
+
+#remote .our-worker .our-work-details-3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#remote .our-worker .our-work-details-3 a{
+    font-family: var(--hf);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--hc1);
+    position: relative;
+    transition: all linear 0.4s;
+}
+
+#remote .our-worker .our-work-details-3 a::before {
+	position: absolute;
+	content: '';
+	height: 3px;
+	width: 310px;
+	background: var(--hc1);
+	top: 50px;
+	left: -88px;
+    visibility: hidden;
+
+}
+
+#remote .our-worker .our-work-details-3:hover a{
+    color: var(--bg1);
+}
+
+#remote .our-worker .our-work-details-3:hover a::before{
+    visibility: visible;
+    background: var(--bg1);
+}
+
+#remote .browse-text p{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--pc1);
+}
+
+#remote .browse-jobs{
+    text-align: right;
+    margin-bottom: 60px;
+}
+
+#remote .browse-jobs a{
+    text-transform: capitalize;
+    font-size: 20px;
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+    color: #fff;
+    padding: 20px 21px;
+    border-radius: 5px;
+    
+}
+
+
+/**********************
+  remote part css ends here
+
+  **********************/
+
+
+
+/**********************
+  feedback part css start here
+
+ **********************/
+ #feedback .feedback-header{
+     padding-top: 70px;
+ }
+
+ #feedback .feedback-header h4{
+    font-family: var(--pf);
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--hc1);
+    margin-bottom: 0px;
+ }
+
+ #feedback .feedback-header p{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--pc1);
+    margin-bottom: -5px;
+ }
+
+ 
+ #feedback .feedback-image{
+     position: relative;
+ }
+
+ #feedback .feedback-image .overlay {
+	position: absolute;
+	top: 27px;
+	right: 42px;
+}
+
+#feedback .feedback-text{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+#feedback .feedback-image .overlay i{
+    color: #fff;
+    
+}
+
+#feedback .feedback-text .overlay{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+    position: absolute;
+	top: -68px;
+	left: 123px;
+    
+}
+
+#feedback .feedback-text .overlay a{
+    color: #fff;
+    font-size: 22px;
+}
+
+#feedback .feedback-text p{
+    font-family: 'Lobster Two', cursive;
+    font-size: 24px;
+    color: #999999;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: -35px;
+}
+
+#feedback .slick-images{
+    padding-top: 130px;
+}
+
+
+#feedback .slick-dots{
+    padding-left: 100px;
+}
+
+ #feedback .slick-dots li{
+     width: 15px;
+     height: 15px;
+     background: #dddddd;
+     float: left;
+     border-radius: 50%;
+     margin: 0px 5px;
+ }
+
+ #feedback .slick-dots li.slick-active{
+     background: var(--bg1);
+     transform: scale(1.2);
+ }
+
+ #feedback .slick-dots li button{
+    font-size: 0px;
+    background: none;
+    outline: none;
+    border: none;
+
+}
+
+
+#feedback .slick-text{
+    padding-top: 170px;
+}
+
+#feedback .slick-text .slick-text-slider h4{
+    font-family: var(--pf);
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--hc1);
+}
+
+#feedback .slick-text .slick-text-slider h5{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--pc1);
+}
+
+#feedback .slick-text .slick-text-slider span i{
+    color: #f68b1e;
+}
+
+#feedback .slick-text .slick-text-slider span p{
+    font-family: var(--hf);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--pc1);
+}
+
+
+/**********************
+  feedback part css ends here
+ **********************/
+
+
+/**********************
+  mitleston part css start here
+ **********************/
+
+
+ #milestone{
+     padding-bottom: 30px;
+ }
+
+ #milestone .funfact{
+     padding-bottom: 30px;
+ }
+
+#milestone .funfact h4{
+    font-family: var(--pf);
+    color: var(--hc1);
+    font-size: 54px;
+    position: relative;
+}
+
+
+#milestone .funfact h4.line-2::before {
+    content: '';
+    width: 315px;
+    height: 1px;
+    background: #dddddd;
+    position: absolute;
+    top: -8px;
+    left: 183px;
+}
+
+#milestone .funfact h4.line-2::after {
+    content: '';
+    width: 1px;
+    height: 260px;
+    background: #dddddd;
+    position: absolute;
+    top: -160px;
+    right: -4px;
+}
+
+#milestone .funfact h5{
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: (--hc1);
+}
+
+
+#milestone .theme-image{
+    border: 1px solid var(--pc1);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 32px 20px;
+}
+
+
+
+
+
+/**********************
+  mitleston part css ends here
+ **********************/
+
+
+
+
+/**********************
+  footer part css start here
+ **********************/
+ #footer{
+    position: relative;
+ }
+
+
+ #footer .footer-logo{
+     padding-top: 30px;
+     padding-bottom: 100px;
+     
+ }
+
+ #footer::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #dddddd;
+    top: 151px;
+    left: 0;
+ }
+
+ #footer::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #dddddd;
+    top: 520px;
+    left: 0;
+ }
+
+
+#footer .footer-bg{
+    background: url('../images/footer-background.png') no-repeat center / cover;
+    z-index: 99;
+}
+
+#footer .footer-bg .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+}
+
+#footer .footer-about h4{
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+
+#footer .footer-about p{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+#footer .footer-about a{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--bg1);
+}
+
+
+#footer .footer-second h4{
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+#footer .footer-second a{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#footer .footer-second a span{
+    color: var(--bg1);
+    display: none;
+
+}
+
+#footer .footer-second a:hover span{
+    display: inline-block;
+}
+
+#footer .footer-newsletter h4{
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#footer .footer-newsletter p{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+#footer .footer-newsletter form{
+    padding-top: 5px;
+}
+
+#footer .footer-newsletter form input {
+	background-color: transparent;
+	padding-left: 15px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	margin-right: -6px;
+}
+
+#footer .footer-newsletter form input:focus-visible{
+    border: transparent !important;
+    box-shadow: none;
+}
+
+#footer .footer-newsletter form input::placeholder{
+    text-transform: capitalize;
+    color: #999999;
+    
+}
+
+#footer .footer-newsletter form button{
+    background-color: transparent;
+}
+
+#footer .footer-newsletter form button {
+    font-family: var(--hf);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, var(--gd1), var(--gd2));
+	padding: 12px 22px;
+	color: #fff;
+    border: none;
+}
+
+#footer .footer-newsletter .footer-social-icon{
+    padding-top: 25px;
+}
+
+#footer .footer-newsletter a{
+    padding-right: 10px;
+    
+}
+
+#footer .footer-newsletter a i{ 
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--bg1);
+    background: #fff;
+    transition: all linear 0.4s;
+
+}
+
+#footer .footer-newsletter a:hover i{
+    background: var(--bg1);
+    color: #fff;
+}
+
+#footer .footer-copyright{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#footer .footer-copyright h5{
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+/**********************
+  footer part css ends here
+ **********************/
