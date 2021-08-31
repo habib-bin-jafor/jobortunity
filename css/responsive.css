@@ -1,48 +1,5 @@
 
 /* ============================= large  device responsive css start ========================== */
-.navbar .navbar-nav{
-    background: var(--bg1);
-}
-
-.navbar .navbar-nav .nav-item .nav-link.active {
-    color: #fff;
-}
-
-.navbar .navbar-nav .nav-item {
-    padding-left: 0;
-    padding-top: 0;
-}
-
-.navbar .navbar-nav .nav-item:hover a {
-    color: #fff;
-}
-
-.navbar .log-btn{
-    background: var(--bg3);
-}
-
-.navbar .log-btn .btn{
-    background: linear-gradient(to right, var(--gd1) , var(--gd2));
-}
-
-.navbar .navbar-nav .nav-link::before {
-   top: 0 !important;
-    left: 0px;
-
-}
-
-#banner .banner-image img {
-    position: static;
-    
-}
-
-#work .work-details::before{
-    left: 175px;
-}
-
-#remote .our-worker .our-work-details-2 .our-work-details-2-a {
-	margin-right: -96px;
-}
 
 
 
@@ -185,7 +142,7 @@
      #footer .footer-newsletter form button {
         position: absolute;
         top: 3px;
-        right: -133px;
+        right: -52px;
         border-radius: 3px;
     }
 
@@ -385,6 +342,7 @@
             top: 3px;
             border-radius: 3px;
          }
+         
 
          #footer::after{
             top: 1060px;
@@ -513,6 +471,10 @@
     #recent .work-hire .work-hire-signup {
         display: block;
     }
+    #recent .recent-checkbox form .checkbox-radio {
+        padding-right: 0px;
+        padding-top: 26px;
+    }
 
     #recent .work-hire .work-hire-signup .work-signup {
         margin-bottom: 30px;
@@ -529,6 +491,19 @@
 
     #remote .our-worker .our-work-details-2 {
         padding-left: 63px;
+    }
+
+    #remote .our-worker .our-work-details-2 .our-work-details-2-b {
+        padding-left: 37px;
+    }
+
+    #remote .our-worker .our-work-details-3 a::before{
+        width: 290px;
+    }
+
+    #recent .recent-content .view-jobs a{
+        font-size: 13px;
+        left: 159px;
     }
 
     #remote .our-worker {
